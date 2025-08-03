@@ -9,7 +9,7 @@ interface Project {
   image: string;
   tags: string[];
   githubUrl: string;
-  // liveUrl: string;
+  liveUrl: string;
   featured: boolean;
 }
 
@@ -26,14 +26,14 @@ const Projects: React.FC = () => {
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
       githubUrl: 'https://github.com/akimmk/e_commerce_php',
-      // liveUrl: 'https://example.com',
+      liveUrl: 'https://example.com',
       featured: true,
     },
     {
       id: '2',
-      title: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates',
-      longDescription: 'A modern task management application featuring real-time collaboration, drag-and-drop interfaces, team management, file attachments, and detailed project analytics. Built with React, Socket.IO, and MongoDB.',
+      title: 'File Transfer App',
+      description: 'Real-time file sharing app for local networks',
+      longDescription: 'A lightweight cross-platform desktop application for fast and secure file transfers over local Wi-Fi without internet. Features include real-time device discovery, file selection via file picker, and support for multiple file types. Built with JavaFX and socket programming.',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React', 'Socket.IO', 'MongoDB', 'Node.js'],
       githubUrl: 'https://github.com',
@@ -42,24 +42,13 @@ const Projects: React.FC = () => {
     },
     {
       id: '3',
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather app with location-based forecasts',
-      longDescription: 'An elegant weather dashboard that provides detailed forecasts, weather maps, and location-based weather alerts. Features a responsive design with animated weather icons and charts built using Chart.js.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Vue.js', 'Chart.js', 'Weather API'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false,
-    },
-    {
-      id: '4',
       title: 'Portfolio Website',
       description: 'Responsive portfolio with modern animations',
       longDescription: 'A sleek, modern portfolio website showcasing creative work with smooth animations, interactive elements, and optimized performance. Built with Next.js and deployed on Vercel.',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/akimmk/portfolio',
+      liveUrl: 'https://portfolio-jb6lqtfy6-mikis-projects-e528ceee.vercel.app/',
       featured: false,
     },
   ];
@@ -147,7 +136,7 @@ const Projects: React.FC = () => {
 
                 {/* Project Links */}
                 <div className="flex gap-3">
-                  {/* <a
+                  <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -155,13 +144,12 @@ const Projects: React.FC = () => {
                   >
                     <ExternalLink size={16} />
                     <span>Live Demo</span>
-                  </a> */}
+                  </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="flex items-center space-x-2 px-6 py-3 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-200"
-                    className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300"
+                    className="flex items-center space-x-2 px-6 py-3 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-200"
                   >
                     <Github size={16} />
                     <span>Code</span>

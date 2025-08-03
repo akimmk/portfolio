@@ -14,39 +14,30 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: '1',
-      title: 'Senior Full-Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      duration: '2022 - Present',
-      description: 'Led development of microservices architecture serving 50k+ daily active users. Mentored junior developers and conducted code reviews. Implemented CI/CD pipelines reducing deployment time by 60%.',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Docker']
+      title: 'Software Engineering Intern',
+      company: 'Atlas Computer Technology',
+      location: 'Addis Ababa, Ethiopia',
+      duration: '2024 july - 2024 Aug',
+      description: 'Contributed to the development of internal tools and client-facing systems. Assisted in debugging, feature implementation, and system optimization across several web applications. Gained hands-on experience with real-world project workflows and version control systems..',
+      technologies: ['React', 'Node.js', 'MongoDB', 'javaScript', 'Docker']
     },
     {
       id: '2',
-      title: 'Full-Stack Developer',
-      company: 'StartupXYZ',
-      location: 'New York, NY',
-      duration: '2020 - 2022',
-      description: 'Built and maintained web applications using React and Django. Developed RESTful APIs and integrated third-party services. Optimized database queries improving response time by 40%.',
-      technologies: ['React', 'Django', 'Python', 'PostgreSQL', 'Redis']
+      title: 'Full Stack Developer (Project-Based)',
+      company: 'Independent Projects / Collaborations',
+      location: 'Remote',
+      duration: '2023 - present',
+      description: 'Designed and developed several full-stack applications including an Interactive Lab Classroom platform, a File Transfer App, and an E-commerce Website. Emphasized clean UI, responsiveness, and performance. Built REST APIs, handled authentication, and managed relational and NoSQL databases.',
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'SpringBoot', 'JavaFX','Socket Programming']
     },
     {
       id: '3',
-      title: 'Frontend Developer',
-      company: 'WebAgency Inc',
-      location: 'Austin, TX',
-      duration: '2019 - 2020',
-      description: 'Created responsive websites and web applications. Implemented modern UI/UX designs with pixel-perfect accuracy. Collaborated with designers to improve user experience.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'Sass']
-    },
-    {
-      id: '4',
       title: 'Computer Science Degree',
-      company: 'University of Technology',
-      location: 'Boston, MA',
-      duration: '2015 - 2019',
-      description: 'Bachelor of Science in Computer Science. Relevant coursework: Data Structures, Algorithms, Database Systems. Senior project: E-commerce platform with recommendation system.',
-      technologies: ['Java', 'Python', 'C++', 'MySQL', 'Machine Learning']
+      company: 'University of Gondar',
+      location: 'Gondar, Ethiopia',
+      duration: '2021 - 2025',
+      description: 'Bachelor of Science in Computer Science. Developed core expertise in algorithms, system design, and full-stack development. Capstone project: Interactive Lab Classroom, a real-time platform for managing lab sessions, users, and resources.',
+      technologies: ['Java', 'Python', 'C++', 'MySQL', 'Docker']
     }
   ];
 
