@@ -30,8 +30,8 @@ const Contact: React.FC = () => {
 
     try {
       await emailjs.send(
-        'service_zhojbs9',      // Replace with your EmailJS Service ID
-        'template_hgujtkd',     // Replace with your EmailJS Template ID
+        'service_zhojbs9',      
+        'template_hgujtkd',     
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           to_name: 'Mikiyas Damtew',
           message: formData.message,
         },
-        'crd5l_tqzujtUCJY6'       // Replace with your EmailJS Public Key
+        'crd5l_tqzujtUCJY6'       
       );
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
